@@ -39,6 +39,7 @@ public class Test08 {
 			res = res * 10 + (c - '0');
 			if (res > Integer.MAX_VALUE) break;
 		}
+
 		if (res > Integer.MAX_VALUE) return flag ? Integer.MIN_VALUE : Integer.MAX_VALUE;
 		if (res == 0) return 0;
 		return flag ? -(int) res : (int) res;
